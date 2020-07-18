@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+Gelen kullanıcı adı: <c:out value="${kullanici.kullaniciAdi}" /><br/>
+Gelen şifre:<c:out value="${kullanici.sifre }" /> <br/>
+Gelen seçenek:
+<c:if test="${kullanici.secenek }">Seçenek seçili</c:if>
+<c:if test="${not kullanici.secenek }">Seçenek seçili değil</c:if><br />
+Gelen cinsiyet::<c:out value="${kullanici.cinsiyet }" /> <br/>
+</body>
+</html>
